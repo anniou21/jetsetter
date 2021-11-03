@@ -1,10 +1,22 @@
 // Define variables for your color scheme
 
 // For example:
-$red: #FD1015;
-$blue: #167FFB;
-$yellow: #FFC65A;
+$red: #692340;
+$blue: #377dff;
+$cyan: #334AC0;
+$yellow: #FDC994;
 $orange: #E67E22;
-$green: #1EDD88;
-$gray: #0E0000;
-$light-gray: #F4F4F4;
+$green: #13AF97;
+$gray: #51596C;
+$light-gray: #F9FAFC;
+$dark: #21325b;
+
+// colors in front theme
+$primary:       $blue;
+$secondary:     $gray;
+$success:       $green;
+$info:          $cyan;
+$warning:       $yellow;
+$danger:        $red;
+$light:         $gray-100;
+$dark:          $gray-900;

@@ -1,20 +1,25 @@
  <%= render "layouts/banner" %>
 
-<h2 class="m-5"> Ecrivez la ville de votre destination</h2>
-<div class="barre-recherche m-5">
+<div style="margin: 90px;">
+  <h2 class="m-5"> Ecrivez la ville de votre destination</h2>
+    <div class="barre-recherche m-5">
     <%= simple_form_for :search, url: root_path, method: :get do |f| %>
-  <div class="search-form-control form-group">
-    <input class="form-control string required" type="text" name="search[query]" id="search_query" />
-    <button name="button" type="submit" class="btn btn-flat">
-      <i class="fas fa-search"></i> Search
-    </button>
+      <div class="search-form-control form-group">
+        <input class="form-control string required" type="text" name="search[query]" id="search_query" />
+          <button name="button" type="submit" class="btn btn-flat">
+            <i class="fas fa-search"></i> Search
+          </button>
+      </div>
+    <% end %>
   </div>
-<% end %>
 </div>
+
 
 <hr>
 
-<!-- Stats -->
+<div style="margin: 90px;">
+  <h2 class="m-5">Les avantages</h2>
+  <!-- Stats -->
 <div class="bg-light rounded-2 mx-3 mx-lg-10">
   <div class="container content-space-2">
     <div class="row justify-content-center">
@@ -52,6 +57,53 @@
   </div>
 </div>
 <!-- End Stats -->
+</div>
 
+<div>
+  <!-- Step -->
+<div class="container content-space-2 content-space-lg-3">
+  <!-- Heading -->
+  <div class="w-md-75 w-lg-50 text-center mx-md-auto mb-5 mb-md-9">
+    <span class="text-cap">Always improving</span>
+    <h2>Solutions rooted in code and design</h2>
+  </div>
+  <!-- End Heading -->
+
+  <!-- Step -->
+  <ul class="step step-md step-centered">
+    <li class="step-item">
+      <div class="step-content-wrapper">
+        <span class="step-icon step-icon-soft-primary">1</span>
+        <div class="step-content">
+          <h3>Industry-leading designs</h3>
+          <p>Achieve virtually any design and layout from within the one template.</p>
+        </div>
+      </div>
+    </li>
+
+    <li class="step-item">
+      <div class="step-content-wrapper">
+        <span class="step-icon step-icon-soft-primary">2</span>
+        <div class="step-content">
+          <h3>Learn from the docs</h3>
+          <p>Whether you're a startup or a global enterprise, learn how to integrate with Front.</p>
+        </div>
+      </div>
+    </li>
+
+    <li class="step-item">
+      <div class="step-content-wrapper">
+        <span class="step-icon step-icon-soft-primary">3</span>
+        <div class="step-content">
+          <h3>Accelerate your business</h3>
+          <p>We help power millions of businesses to built and run smoothly.</p>
+        </div>
+      </div>
+    </li>
+  </ul>
+  <!-- End Step -->
+</div>
+<!-- End Step -->
+</div>
 
 
